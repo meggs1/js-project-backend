@@ -1,5 +1,5 @@
 class WineSerializer < ActiveModel::Serializer
-  attributes :name, :image_url, :description, :price, :region
+  attributes :id, :name, :region, :price, :image_url, :description
   belongs_to :varietal
 
 end

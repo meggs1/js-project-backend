@@ -1,4 +1,5 @@
 class VarietalSerializer < ActiveModel::Serializer
-  attributes :name, :description
+  attributes :id, :name, :description
   has_many :wines
+
 end
