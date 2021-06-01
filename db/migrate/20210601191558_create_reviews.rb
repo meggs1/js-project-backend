@@ -3,6 +3,8 @@ class CreateReviews < ActiveRecord::Migration[6.1]
     create_table :reviews do |t|
       t.string :name
       t.string :content
+      t.belongs_to :wine, null: false, foreign_key: true
+
 
       t.timestamps
     end
